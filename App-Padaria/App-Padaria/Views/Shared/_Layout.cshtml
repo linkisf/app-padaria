@@ -7,20 +7,23 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/App_Padaria.styles.css" asp-append-version="true" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-light border-bottom box-shadow layout-menu-nav">
+        <nav class="navbar border-bottom box-shadow layout-menu-nav">
             <div>                
                 <ul class="navbar-nav flex-grow-1 menu-nav-elementos-lista">
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Página Inicial">Página Inicial</a>
+                    <li class="nav-item menu-nav-elementos">
+                        <a class="nav-link" asp-area="" asp-controller="PaginaInicial" asp-action="Index">Página Inicial</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Produção">Produção</a>
+                    <li class="nav-item menu-nav-elementos">
+                        <a class="nav-link" asp-area="" asp-controller="Producao" asp-action="Index">Produção</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Contabilidade">Contabilidade</a>
+                    <li class="nav-item menu-nav-elementos">
+                        <a class="nav-link" asp-area="" asp-controller="Contabilidade" asp-action="Index">Contabilidade</a>
                     </li>
                 </ul>
                 

@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Am_r\Desktop\App-Padaria\App-Padaria\App-Padaria
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Am_r/Desktop/App-Padaria/App-Padaria/App-Padaria/Views/Contabilidade/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFiaWxpZGFkZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Am_r/Desktop/App-Padaria/App-Padaria/App-Padaria/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -30,6 +34,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Am_r/Desktop/App-Padaria/App-Padaria/App-Padaria/Views/PaginaInicial/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnaW5hSW5pY2lhbFxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Am_r/Desktop/App-Padaria/App-Padaria/App-Padaria/Views/Producao/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjYW9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Am_r/Desktop/App-Padaria/App-Padaria/App-Padaria/Views/Shared/Error.cshtml]
