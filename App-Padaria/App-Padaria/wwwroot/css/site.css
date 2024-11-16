@@ -14,9 +14,25 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-color: #FFFEF1;
 }
 
+main{
+    padding: 10px
+}
+
+
+h1 {
+    color: #5C5327;
+    font-family: Quicksand;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    font-weight: bold;
+    margin: 20px;
+}
 
 .layout-menu-nav {
     background: #E1CC61;
@@ -25,7 +41,7 @@ body {
     justify-content: center;
     align-items: center;
     text-align:center;
-    box-shadow: 10px;
+    
 }
 
 .menu-nav-elementos-lista {
@@ -62,4 +78,79 @@ body {
 }
 .menu-nav-elementos a:active {
     color: #E1CC61;
+}
+
+.btns-prod {
+    margin: 10px 15px 0px 15px;
+    font-family: Quicksand;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    border-style: hidden;
+    border-radius: 20px;
+    padding: 0px 10px 0px 10px;
+    color: #5C5327;
+    background-color: #E1CC61;
+    display: flex;
+    height: 37px;
+    padding: 0px 20px 0px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.btns-prod:hover {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0.12) 100%), #E1CC61;
+    color: #5C5327;
+}
+
+.btns-prod:active {
+    background: #5C5327;
+    color: #E1CC61;
+}
+
+
+.div-btns-prod {
+    display: flex;
+    justify-content: center;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.btns-pages {
+    display: flex;
+    padding: 0px 20px 0px 20px;
+    margin: 10px 0px 10px 0px;
+    height: 62px;
+    justify-content: center;
+    align-items: center;
+    gap: 26px;
+    flex-shrink: 0;
+    border-radius: 23px;
+    background: #E1CC61;
+    color: #5C5327;
+    font-size: 25px;
+    font-weight: bold;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.btns-pages:hover {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0.12) 100%), #E1CC61;
+    color: #5C5327;
+}
+
+.btns-pages:active {
+    background: #5C5327;
+    color: #E1CC61;
+}
+
+.section-btns{
+    margin-top: 60px;
+    display: grid;
+    justify-content:center;
+    flex-direction: column;
+
 }
