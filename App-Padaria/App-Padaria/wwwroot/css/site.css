@@ -25,10 +25,41 @@ body {
     justify-content: center;
     align-items: center;
     text-align:center;
+    box-shadow: 10px;
 }
 
 .menu-nav-elementos-lista {
     display: inline-flex;
     flex-direction: row;
     gap: 50px;
+    
+}
+
+.menu-nav-elementos {    
+    font-family: Quicksand;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-style: hidden;
+    border-radius: 20px;
+    padding: 0px 15px 0px 15px;
+}
+.menu-nav-elementos a {
+    color: #5C5327;
+}
+
+.menu-nav-elementos:hover {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.12) 0%, rgba(0, 0, 0, 0.12) 100%), #E1CC61;
+}
+.menu-nav-elementos a:hover {
+    color: #5C5327;
+}
+
+
+.menu-nav-elementos:active {
+    background: #5C5327;
+}
+.menu-nav-elementos a:active {
+    color: #E1CC61;
 }
