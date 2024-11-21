@@ -1,16 +1,17 @@
 using App_Padaria.Infra;
+using App_Padaria.Repositories;
+using App_Padaria.Repositories.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
-
-
 builder.Services.AddSqlServer<ApplicationDbContext>(builder.Configuration["ConnectionStrings:PadariaDb"]);
 
 
-
+builder.Services.AddTransient<IPao, PaoRepository>();
+builder.Services.AddTransient<ITipoMassa, TipoMassaRepository>();
+builder.Services.AddTransient<ITipoPlaca, TipoPlacaRepository>();
 
 
 
@@ -33,7 +34,7 @@ app.UseAuthorization();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Producao}/{action=Lancamento}/{id?}"
+    pattern: "{controller=PaginaInicial}/{action=Index}/{id?}"
     );
 
 

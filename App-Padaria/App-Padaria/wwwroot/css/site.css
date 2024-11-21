@@ -47,21 +47,68 @@ h2 {
     line-height: normal;
 }
 
+table {
+    border-collapse: separate !important; 
+}
+
+.table {
+    border-radius: 15px;
+    border-style: none;
+    display: block;
+    justify-items: center;
+    border-spacing: 30px 5px;
+}
+
+.table th {
+    font-size: 20px;
+    color: #5C5327;
+    border-style: none;
+    gap:30px;
+}
+
+.table tb {
+    font-size: 20px;
+    color: #5C5327;
+    border-style: none;
+}
+
+.table td {
+    color: #5C5327;
+    font-weight: 600;
+    background-color: #D9D9D9;
+    border-radius: 100px;
+    text-align: center;
+}
+
+
+.hr {
+    background-color: #5C5327 !important;
+    width: 846px !important;
+    height: 4px !important;
+    border: 2px solid;
+    opacity: 1 !important;
+    border-radius: 100px;    
+    margin: auto !important;
+}
+
+
+
+
+
 .layout-menu-nav {
     background: #E1CC61;
     display: flex;
     padding: 20px 0px 21px 0px;
     justify-content: center;
     align-items: center;
-    text-align:center;
-    
+    text-align: center;
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.25);
 }
 
 .menu-nav-elementos-lista {
     display: inline-flex;
     flex-direction: row;
-    gap: 50px;
-    
+    gap: 50px;    
 }
 
 .menu-nav-elementos {    
@@ -181,11 +228,4 @@ a:link {
 .svg-btn-voltar:hover {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #E1CC61;
 }
-/*
-.svg-btn-voltar:active {
-    background-color: #5C5327;
-}
 
-.svg-btn-voltar path:active {
-    fill: #E1CC61;    
-}*/

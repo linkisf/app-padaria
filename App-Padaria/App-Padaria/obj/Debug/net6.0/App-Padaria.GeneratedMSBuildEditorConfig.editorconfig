@@ -10,24 +10,70 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = App_Padaria
 build_property.RootNamespace = App_Padaria
 build_property.ProjectDir = C:\Users\Am_r\Desktop\App-Padaria\App-Padaria\App-Padaria\
-build_property.EnableComHosting = 
-build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
 build_property.MSBuildProjectDirectory = C:\Users\Am_r\Desktop\App-Padaria\App-Padaria\App-Padaria
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Am_r/Desktop/App-Padaria/App-Padaria/App-Padaria/Views/CadastroProducao/Cadastro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FkYXN0cm9Qcm9kdWNhb1xDYWRhc3Ryby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Am_r/Desktop/App-Padaria/App-Padaria/App-Padaria/Views/CadastroProducao/CadastroPao.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FkYXN0cm9Qcm9kdWNhb1xDYWRhc3Ryb1Bhby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Am_r/Desktop/App-Padaria/App-Padaria/App-Padaria/Views/CadastroProducao/CadastroProduto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FkYXN0cm9Qcm9kdWNhb1xDYWRhc3Ryb1Byb2R1dG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Am_r/Desktop/App-Padaria/App-Padaria/App-Padaria/Views/CadastroProducao/CadastroReceita.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FkYXN0cm9Qcm9kdWNhb1xDYWRhc3Ryb1JlY2VpdGEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Am_r/Desktop/App-Padaria/App-Padaria/App-Padaria/Views/CadastroProducao/CadastroTipoDeMassa.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FkYXN0cm9Qcm9kdWNhb1xDYWRhc3Ryb1RpcG9EZU1hc3NhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Am_r/Desktop/App-Padaria/App-Padaria/App-Padaria/Views/CadastroProducao/CadastroTipoDePlaca.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FkYXN0cm9Qcm9kdWNhb1xDYWRhc3Ryb1RpcG9EZVBsYWNhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Am_r/Desktop/App-Padaria/App-Padaria/App-Padaria/Views/Contabilidade/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFiaWxpZGFkZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Am_r/Desktop/App-Padaria/App-Padaria/App-Padaria/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[C:/Users/Am_r/Desktop/App-Padaria/App-Padaria/App-Padaria/Views/LancamentoProducaoDiaria/OpcoesProducaoDiariaDePao.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuY2FtZW50b1Byb2R1Y2FvRGlhcmlhXE9wY29lc1Byb2R1Y2FvRGlhcmlhRGVQYW8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Am_r/Desktop/App-Padaria/App-Padaria/App-Padaria/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[C:/Users/Am_r/Desktop/App-Padaria/App-Padaria/App-Padaria/Views/LancamentoProducaoDiaria/ProducaoDiariaPaoDaManha.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuY2FtZW50b1Byb2R1Y2FvRGlhcmlhXFByb2R1Y2FvRGlhcmlhUGFvRGFNYW5oYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Am_r/Desktop/App-Padaria/App-Padaria/App-Padaria/Views/LancamentoProducaoDiaria/ProducaoDiariaPaoDaNoite.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuY2FtZW50b1Byb2R1Y2FvRGlhcmlhXFByb2R1Y2FvRGlhcmlhUGFvRGFOb2l0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Am_r/Desktop/App-Padaria/App-Padaria/App-Padaria/Views/LancamentoProducaoDiaria/ProducaoDiariaPaoDoDiaSeguinte.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuY2FtZW50b1Byb2R1Y2FvRGlhcmlhXFByb2R1Y2FvRGlhcmlhUGFvRG9EaWFTZWd1aW50ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Am_r/Desktop/App-Padaria/App-Padaria/App-Padaria/Views/LancamentoProducaoDiaria/ReceitaDiariaPao.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuY2FtZW50b1Byb2R1Y2FvRGlhcmlhXFJlY2VpdGFEaWFyaWFQYW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Am_r/Desktop/App-Padaria/App-Padaria/App-Padaria/Views/LancamentoProducao/Lancamento.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuY2FtZW50b1Byb2R1Y2FvXExhbmNhbWVudG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Am_r/Desktop/App-Padaria/App-Padaria/App-Padaria/Views/LancamentoProducao/LancamentoProducaoRegular.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuY2FtZW50b1Byb2R1Y2FvXExhbmNhbWVudG9Qcm9kdWNhb1JlZ3VsYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Am_r/Desktop/App-Padaria/App-Padaria/App-Padaria/Views/LancamentoProducao/OpcoesLancamentoProducaoDiariaoDePao.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGFuY2FtZW50b1Byb2R1Y2FvXE9wY29lc0xhbmNhbWVudG9Qcm9kdWNhb0RpYXJpYW9EZVBhby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Am_r/Desktop/App-Padaria/App-Padaria/App-Padaria/Views/PaginaInicial/Index.cshtml]
@@ -38,40 +84,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnaW5hSW5pY2lhbFxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Am_r/Desktop/App-Padaria/App-Padaria/App-Padaria/Views/Producao/Cadastro.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjYW9cQ2FkYXN0cm8uY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/Am_r/Desktop/App-Padaria/App-Padaria/App-Padaria/Views/Producao/FechamentoDiario.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjYW9cRmVjaGFtZW50b0RpYXJpby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Am_r/Desktop/App-Padaria/App-Padaria/App-Padaria/Views/Producao/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjYW9cSW5kZXguY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Am_r/Desktop/App-Padaria/App-Padaria/App-Padaria/Views/Producao/Lancamento.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjYW9cTGFuY2FtZW50by5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Am_r/Desktop/App-Padaria/App-Padaria/App-Padaria/Views/Producao/ProducaoDiariaDePao.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjYW9cUHJvZHVjYW9EaWFyaWFEZVBhby5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Am_r/Desktop/App-Padaria/App-Padaria/App-Padaria/Views/Producao/ProducaoDiariaDePao_PaoDaManha.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjYW9cUHJvZHVjYW9EaWFyaWFEZVBhb19QYW9EYU1hbmhhLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Am_r/Desktop/App-Padaria/App-Padaria/App-Padaria/Views/Producao/ProducaoDiariaDePao_PaoDaNoite.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjYW9cUHJvZHVjYW9EaWFyaWFEZVBhb19QYW9EYU5vaXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Am_r/Desktop/App-Padaria/App-Padaria/App-Padaria/Views/Producao/ProducaoDiariaDePao_PaoDoDiaSeguinte.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjYW9cUHJvZHVjYW9EaWFyaWFEZVBhb19QYW9Eb0RpYVNlZ3VpbnRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/Am_r/Desktop/App-Padaria/App-Padaria/App-Padaria/Views/Producao/ProducaoDiariaDePao_ReceitaDiaria.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjYW9cUHJvZHVjYW9EaWFyaWFEZVBhb19SZWNlaXRhRGlhcmlhLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Am_r/Desktop/App-Padaria/App-Padaria/App-Padaria/Views/Shared/Error.cshtml]

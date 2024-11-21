@@ -244,7 +244,7 @@ svg {
 
 table {
   caption-side: bottom;
-  border-collapse: collapse;
+  /*border-collapse: collapse;*/
 }
 
 caption {
@@ -266,7 +266,7 @@ tr,
 td,
 th {
   border-color: inherit;
-  border-style: solid;
+  border-style: none;
   border-width: 0;
 }
 

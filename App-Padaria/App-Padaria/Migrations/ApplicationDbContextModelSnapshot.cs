@@ -24,11 +24,14 @@ namespace App_Padaria.Migrations
 
             modelBuilder.Entity("App_Padaria.Models.Producao.PaoModel", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("IdPao")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdPao"));
+
+                    b.Property<DateTime>("DataAtualizacao")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("NomePao")
                         .IsRequired()
@@ -43,7 +46,7 @@ namespace App_Padaria.Migrations
                     b.Property<int>("TipoPlacaId")
                         .HasColumnType("int");
 
-                    b.HasKey("Id");
+                    b.HasKey("IdPao");
 
                     b.HasIndex("TipoMassaId");
 
@@ -54,28 +57,28 @@ namespace App_Padaria.Migrations
 
             modelBuilder.Entity("App_Padaria.Models.Producao.TipoMassaModel", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("TipoMassaId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TipoMassaId"));
 
                     b.Property<string>("NomeTipoMassa")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                    b.HasKey("TipoMassaId");
 
                     b.ToTable("DOM_TipoMassa", (string)null);
                 });
 
             modelBuilder.Entity("App_Padaria.Models.Producao.TipoPlacaModel", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("TipoPlacaId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TipoPlacaId"));
 
                     b.Property<string>("NomeTipoPlaca")
                         .IsRequired()
@@ -84,7 +87,7 @@ namespace App_Padaria.Migrations
                     b.Property<int>("QuantidadePaes")
                         .HasColumnType("int");
 
-                    b.HasKey("Id");
+                    b.HasKey("TipoPlacaId");
 
                     b.ToTable("DOM_TipoPlaca", (string)null);
                 });

@@ -23,13 +23,13 @@ namespace App_Padaria.Infra
             base.OnModelCreating(builder);
 
             builder.Entity<PaoModel>()
-                .ToTable("DOM_Pao");
+                .ToTable("DOM_Pao");                     
             builder.Entity<PaoModel>()
                 .Property(p => p.NomePao).IsRequired();
 
 
             builder.Entity<TipoPlacaModel>()
-                .ToTable("DOM_TipoPlaca");
+                .ToTable("DOM_TipoPlaca");            
             builder.Entity<TipoPlacaModel>()
                 .Property(p => p.NomeTipoPlaca).IsRequired();
             builder.Entity<TipoPlacaModel>()
@@ -37,7 +37,7 @@ namespace App_Padaria.Infra
 
 
             builder.Entity<TipoMassaModel>()
-                .ToTable("DOM_TipoMassa");
+                .ToTable("DOM_TipoMassa");            
             builder.Entity<TipoMassaModel>()
                 .Property(p => p.NomeTipoMassa).IsRequired();
         }

@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace App_Padaria.Migrations
 {
     /// <inheritdoc />
-    public partial class CriarIdentityTables : Migration
+    public partial class InitBDCriarTabelas : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -48,6 +48,33 @@ namespace App_Padaria.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_AspNetUsers", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "DOM_TipoMassa",
+                columns: table => new
+                {
+                    TipoMassaId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    NomeTipoMassa = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_DOM_TipoMassa", x => x.TipoMassaId);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "DOM_TipoPlaca",
+                columns: table => new
+                {
+                    TipoPlacaId = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    NomeTipoPlaca = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    QuantidadePaes = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_DOM_TipoPlaca", x => x.TipoPlacaId);
                 });
 
             migrationBuilder.CreateTable(
@@ -156,6 +183,29 @@ namespace App_Padaria.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "DOM_Pao",
+                columns: table => new
+                {
+                    IdPao = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    NomePao = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Peso = table.Column<double>(type: "float", nullable: false),
+                    TipoMassaId = table.Column<int>(type: "int", nullable: false),
+                    TipoPlacaId = table.Column<int>(type: "int", nullable: false),
+                    DataAtualizacao = table.Column<DateTime>(type: "datetime2", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_DOM_Pao", x => x.IdPao);
+                    table.ForeignKey(
+                        name: "FK_DOM_Pao_DOM_TipoMassa_TipoMassaId",
+                        column: x => x.TipoMassaId,
+                        principalTable: "DOM_TipoMassa",
+                        principalColumn: "TipoMassaId",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
                 table: "AspNetRoleClaims",
@@ -194,6 +244,11 @@ namespace App_Padaria.Migrations
                 column: "NormalizedUserName",
                 unique: true,
                 filter: "[NormalizedUserName] IS NOT NULL");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_DOM_Pao_TipoMassaId",
+                table: "DOM_Pao",
+                column: "TipoMassaId");
         }
 
         /// <inheritdoc />
@@ -215,10 +270,19 @@ namespace App_Padaria.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
+                name: "DOM_Pao");
+
+            migrationBuilder.DropTable(
+                name: "DOM_TipoPlaca");
+
+            migrationBuilder.DropTable(
                 name: "AspNetRoles");
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");
+
+            migrationBuilder.DropTable(
+                name: "DOM_TipoMassa");
         }
     }
 }

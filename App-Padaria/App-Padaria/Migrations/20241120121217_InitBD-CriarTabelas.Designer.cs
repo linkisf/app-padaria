@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace App_Padaria.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241119014146_CriarIdentityTables")]
-    partial class CriarIdentityTables
+    [Migration("20241120121217_InitBD-CriarTabelas")]
+    partial class InitBDCriarTabelas
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,6 +24,74 @@ namespace App_Padaria.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+
+            modelBuilder.Entity("App_Padaria.Models.Producao.PaoModel", b =>
+                {
+                    b.Property<int>("IdPao")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdPao"));
+
+                    b.Property<DateTime>("DataAtualizacao")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("NomePao")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double>("Peso")
+                        .HasColumnType("float");
+
+                    b.Property<int>("TipoMassaId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TipoPlacaId")
+                        .HasColumnType("int");
+
+                    b.HasKey("IdPao");
+
+                    b.HasIndex("TipoMassaId");
+
+                    b.ToTable("DOM_Pao", (string)null);
+                });
+
+            modelBuilder.Entity("App_Padaria.Models.Producao.TipoMassaModel", b =>
+                {
+                    b.Property<int>("TipoMassaId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TipoMassaId"));
+
+                    b.Property<string>("NomeTipoMassa")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("TipoMassaId");
+
+                    b.ToTable("DOM_TipoMassa", (string)null);
+                });
+
+            modelBuilder.Entity("App_Padaria.Models.Producao.TipoPlacaModel", b =>
+                {
+                    b.Property<int>("TipoPlacaId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("TipoPlacaId"));
+
+                    b.Property<string>("NomeTipoPlaca")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("QuantidadePaes")
+                        .HasColumnType("int");
+
+                    b.HasKey("TipoPlacaId");
+
+                    b.ToTable("DOM_TipoPlaca", (string)null);
+                });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
                 {
@@ -221,6 +289,17 @@ namespace App_Padaria.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens", (string)null);
+                });
+
+            modelBuilder.Entity("App_Padaria.Models.Producao.PaoModel", b =>
+                {
+                    b.HasOne("App_Padaria.Models.Producao.TipoMassaModel", "TipoMassa")
+                        .WithMany()
+                        .HasForeignKey("TipoMassaId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("TipoMassa");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

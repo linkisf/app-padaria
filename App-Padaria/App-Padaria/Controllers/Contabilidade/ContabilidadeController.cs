@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace App_Padaria.Controllers
+namespace App_Padaria.Controllers.Contabilidade
 {
     public class ContabilidadeController : Controller
     {
