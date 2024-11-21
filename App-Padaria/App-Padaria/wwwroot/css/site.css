@@ -2,6 +2,10 @@ html {
   font-size: 14px;
 }
 
+html a {
+    color: #5C5327;
+}
+
 @media (min-width: 768px) {
   html {
     font-size: 16px;
@@ -16,6 +20,8 @@ html {
 body {
     margin-bottom: 60px;
     background-color: #FFFEF1;
+    font-family: Quicksand;
+    color: #5C5327;
 }
 
 main{
@@ -24,15 +30,70 @@ main{
 
 
 h1 {
-    color: #5C5327;
-    font-family: Quicksand;
     font-size: 64px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     font-weight: bold;
-    margin: 20px;
+    margin-top: 20px;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.25);
 }
+
+h2 {
+    text-align: center;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+table {
+    border-collapse: separate !important; 
+}
+
+.table {
+    border-radius: 15px;
+    border-style: none;
+    display: block;
+    justify-items: center;
+    border-spacing: 30px 5px;
+}
+
+.table th {
+    font-size: 20px;
+    color: #5C5327;
+    border-style: none;
+    gap:30px;
+}
+
+.table tb {
+    font-size: 20px;
+    color: #5C5327;
+    border-style: none;
+}
+
+.table td {
+    color: #5C5327;
+    font-weight: 600;
+    background-color: #D9D9D9;
+    border-radius: 100px;
+    text-align: center;
+}
+
+
+.hr {
+    background-color: #5C5327 !important;
+    width: 846px !important;
+    height: 4px !important;
+    border: 2px solid;
+    opacity: 1 !important;
+    border-radius: 100px;    
+    margin: auto !important;
+}
+
+
+
+
 
 .layout-menu-nav {
     background: #E1CC61;
@@ -40,15 +101,14 @@ h1 {
     padding: 20px 0px 21px 0px;
     justify-content: center;
     align-items: center;
-    text-align:center;
-    
+    text-align: center;
+    box-shadow: 0px 3px 3px 0px rgba(0, 0, 0, 0.25);
 }
 
 .menu-nav-elementos-lista {
     display: inline-flex;
     flex-direction: row;
-    gap: 50px;
-    
+    gap: 50px;    
 }
 
 .menu-nav-elementos {    
@@ -60,6 +120,7 @@ h1 {
     border-style: hidden;
     border-radius: 20px;
     padding: 0px 15px 0px 15px;
+    
 }
 .menu-nav-elementos a {
     color: #5C5327;
@@ -81,8 +142,7 @@ h1 {
 }
 
 .btns-prod {
-    margin: 10px 15px 0px 15px;
-    font-family: Quicksand;
+    margin: 10px 15px 0px 15px;    
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
@@ -154,3 +214,18 @@ a:link {
     flex-direction: column;
 
 }
+
+.svg-btn-voltar {
+    background-color: #E1CC61;
+    border-radius: 100px;
+}
+
+.btn-voltar{
+    border-radius: 100px;
+    border: none;
+}
+
+.svg-btn-voltar:hover {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), #E1CC61;
+}
+
